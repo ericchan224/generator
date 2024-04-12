@@ -9,7 +9,7 @@ public class Main {
         String projectPath = System.getProperty("user.dir");
         File projectFile = new File(projectPath);
         String inputPath = new File(projectFile, "demo/acm-template").getAbsolutePath();
-        String outPath = projectPath;
-        StaticGenerator.copyFilesByHutool(inputPath, outPath);
+        String outPath = projectPath + "\\recursive";
+        StaticGenerator.copyFilesByRecursive(inputPath, outPath);
     }
 }
