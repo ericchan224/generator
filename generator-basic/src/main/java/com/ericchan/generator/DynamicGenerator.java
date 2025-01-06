@@ -33,7 +33,7 @@ public class DynamicGenerator {
         configuration.setNumberFormat("0.######");
 
         // 创建模板对象，加载指定模块
-        String templateName = new File(inputPath).getName();
+        String templateName = new File(inputPath, "MainTemplate.java.ftl").getName();
         Template template = configuration.getTemplate(templateName);
 
         // 创建数据模型
